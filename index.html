@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Jothiroopa D – Data Analyst skilled in Python, SQL, Excel, Power BI and Tableau." />
+  <title>Jothiroopa D | Data Analyst Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav">
+    <a href="#home" class="logo">Jothiroopa<span>.</span></a>
+    <nav id="menu" class="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact" class="btn btn-small">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+    <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Jothiroopa D</h1>
+        <h2 class="role">I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          MCA student with a Cyber Security background who turns raw data into
+          clear, useful insights using Python, SQL, Excel and Power BI.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="Resume_jothiroopad.pdf" class="btn btn-outline" download>Download Resume</a>
+        </div>
+        <div class="socials">
+          <a href="https://linkedin.com/in/jothiroopa-d" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Jothi-Roopa" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:jothiroopad@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <!-- Put your photo at images/profile.jpg (see README) -->
+          <img src="images/profile.jpg" alt="Portrait of Jothiroopa D"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="photo-fallback" style="display:none;">JD</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <p>
+          I'm a Data Analyst currently pursuing my <strong>Master of Computer Applications (MCA)</strong>
+          at Rathinam Technical Campus, Coimbatore. I hold a B.Sc. in Computer Science with
+          Cyber Security, which gives me a careful, security-minded approach to working with data.
+        </p>
+        <p>
+          I'm looking for a challenging role in a reputable organization where I can grow my
+          knowledge and skills, make full use of my training, and contribute meaningfully
+          to the company's success.
+        </p>
+        <ul class="facts">
+          <li><span>📍</span> Coimbatore, Tamil Nadu</li>
+          <li><span>🎓</span> MCA (2025 – 2027)</li>
+          <li><span>💼</span> Open to internships &amp; entry-level roles</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <h3 class="section-title">Technical Skills</h3>
+
+      <div class="cards">
+        <article class="card">
+          <h4>Programming</h4>
+          <div class="tags"><span>Python</span><span>SQL</span></div>
+        </article>
+        <article class="card">
+          <h4>Data Libraries</h4>
+          <div class="tags"><span>Pandas</span><span>NumPy</span></div>
+        </article>
+        <article class="card">
+          <h4>Spreadsheets</h4>
+          <div class="tags"><span>Microsoft Excel</span></div>
+        </article>
+        <article class="card">
+          <h4>Visualization</h4>
+          <div class="tags"><span>Power BI</span><span>Tableau (Basic)</span></div>
+        </article>
+        <article class="card">
+          <h4>Dev Tools</h4>
+          <div class="tags"><span>Jupyter Notebook</span><span>VS Code</span></div>
+        </article>
+        <article class="card">
+          <h4>Operating Systems</h4>
+          <div class="tags"><span>Windows</span><span>Linux (Basic)</span></div>
+        </article>
+      </div>
+
+      <h3 class="section-title small">Soft Skills</h3>
+      <div class="tags big">
+        <span>Analytical Thinking</span>
+        <span>Team Collaboration</span>
+        <span>Communication Skills</span>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h3 class="section-title">Projects</h3>
+      <div class="cards two">
+        <article class="card project">
+          <div class="project-icon">🎓</div>
+          <h4>Alumni Networking &amp; Career Portal</h4>
+          <p>
+            A web portal built with Flask and MySQL. Includes user authentication,
+            job postings and mentorship features to connect alumni with students.
+          </p>
+          <div class="tags"><span>Flask</span><span>MySQL</span><span>Python</span></div>
+          <a href="https://github.com/Jothi-Roopa" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+
+        <article class="card project">
+          <div class="project-icon">🛡️</div>
+          <h4>Email Intrusion Detection using ML</h4>
+          <p>
+            An intrusion detection system that classifies malicious emails using data
+            preprocessing and machine learning models.
+          </p>
+          <div class="tags"><span>Python</span><span>Machine Learning</span><span>Pandas</span></div>
+          <a href="https://github.com/Jothi-Roopa" target="_blank" rel="noopener" class="link">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section alt">
+      <h3 class="section-title">Education</h3>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-date">2025 – 2027</span>
+          <h4>Master of Computer Applications (MCA)</h4>
+          <p>Rathinam Technical Campus</p>
+        </div>
+        <div class="t-item">
+          <span class="t-date">2022 – 2025</span>
+          <h4>B.Sc. Computer Science with Cyber Security</h4>
+          <p>PSGR Krishnammal College for Women</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+      <h3 class="section-title">Internship</h3>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="t-date">May 2 – May 31, 2023</span>
+          <h4>Digital Forensic Analyst – Intern</h4>
+          <p class="company">Hackup Technology Pvt Ltd</p>
+          <p>
+            Worked under the Digital Forensics Investigation Framework and learned to
+            identify secure and unsecure email IDs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section alt">
+      <h3 class="section-title">Certifications</h3>
+      <ul class="cert-list">
+        <li>Introduction to Data Analysis using Microsoft Excel</li>
+        <li>Digital Business Marketing with Easil</li>
+        <li>Business Analysis &amp; Process Management</li>
+        <li>Python Essentials</li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <h3 class="section-title">Get In Touch</h3>
+      <p class="center-text">
+        I'd love to hear about opportunities, collaborations or just say hello.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Email</strong><br /><a href="mailto:jothiroopad@gmail.com">jothiroopad@gmail.com</a></p>
+          <p><strong>Phone</strong><br /><a href="tel:+919840235989">+91 98402 35989</a></p>
+          <p><strong>Location</strong><br />Coimbatore, Tamil Nadu</p>
+          <p><strong>Links</strong><br />
+            <a href="https://linkedin.com/in/jothiroopa-d" target="_blank" rel="noopener">LinkedIn</a> ·
+            <a href="https://github.com/Jothi-Roopa" target="_blank" rel="noopener">GitHub</a>
+          </p>
+        </div>
+
+        <!-- Opens the visitor's email app with the message filled in -->
+        <form id="contact-form" class="contact-form">
+          <input type="text" id="name" placeholder="Your name" required />
+          <input type="email" id="email" placeholder="Your email" required />
+          <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jothiroopa D. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
